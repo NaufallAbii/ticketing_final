@@ -2,18 +2,25 @@ import React from 'react'
 import Home from './pages/home'
 import Trending from './pages/trending'
 import Food from './pages/food'
+import Profile from './pages/profile'
+import Detailfilm from './pages/detail-film'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import { NavigationProvider } from './contexts/NavigationContext'
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/Trending' element={<Trending/>} />
-          <Route path='/Food' element={<Food/>} />
-        </Routes>
-      </BrowserRouter>
+      <NavigationProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='/trending' element={<Trending/>} />
+            <Route path='/food' element={<Food/>} />
+            <Route path='/profile' element={<Profile/>} />
+            <Route path='/detail-film' element={<Detailfilm/>} />
+          </Routes>
+        </BrowserRouter>
+      </NavigationProvider>
     </div>
   )
 }
