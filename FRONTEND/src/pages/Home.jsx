@@ -123,7 +123,7 @@ function App() {
                   <span>
 
                   </span>
-                  <a href="detail-film.html">
+                  <a href="/detail-film">
                     <img src={movie.src} alt={movie.title} />
                   </a>
                   <p>{movie.title}</p>
