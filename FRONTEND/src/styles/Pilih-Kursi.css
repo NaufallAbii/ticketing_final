@@ -79,6 +79,7 @@ body {
     margin-top: 70px; /* Adjust this value based on the height of the header */
 }
 
+
 .hamburger-menu {
     display: none;
     cursor: pointer;
@@ -88,73 +89,6 @@ body {
     height: 3px;
     background-color: white;
     margin: 5px;
-}
-@media (max-width: 992px) {
-    .header {
-        margin-left: -30px;
-    }
-    .header .logo {
-        font-size: 25px;
-    }
-    .header .search-bar {
-        width: 18em;
-    }
-    .bioskop {
-        max-width: 100%
-    }
-}
-@media (max-width: 768px) {
-    .header {
-        margin-left: 0;
-    }
-    .sidebar {
-        transform: translateX(-100%);
-        top: 0;
-        height: 100vh;
-    }
-    .sidebar.active {
-        transform: translateX(0);
-    }
-    .header {
-        left: 0;
-        padding: 10px;
-    }
-    .header h2 {
-        display: none;
-    }
-    .header .notif {
-        font-size: 10px;
-    }
-    .header .search-bar {
-        padding: 5px;
-        width: 200px;
-    }
-    .header .search-bar input {
-        font-size: 0.875rem;
-    }
-    .header .user-info i {
-        font-size: 1.5rem;
-    }
-    .header .user-info span {
-        display: none;
-    }
-    .main-content {
-        margin-left: 0;
-        margin-top: 60px;
-        padding: 10px;
-    }
-    .hamburger-menu {
-        display: block;
-    }
-    .sidebar a {
-        margin: 10px 0; /* Reduce margin for all links */
-    }
-    .sidebar a.active {
-        margin-top: 40px; /* Add more margin to push the first link down */
-    }
-    .bioskop {
-        max-width: 100%;
-    }
 }
 
 .cover-container {
@@ -305,9 +239,87 @@ body {
     
 }
 .layar {
-    width: 500px;
+    width: 455px !important;
     margin-left: 20px;
 }
 .detail-kursi {
     text-align: left;
 }
+
+@media (max-width: 992px) {
+    .header {
+        margin-left: -30px;
+    }
+    .header .logo {
+        font-size: 25px;
+    }
+    .header .search-bar {
+        width: 18em;
+    }
+    .bioskop {
+        max-width: 100%
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        margin-left: 0;
+    }
+    .sidebar {
+        transform: translateX(-100%);
+        top: 0;
+        height: 100vh;
+    }
+    .sidebar.active {
+        transform: translateX(0);
+    }
+    .header {
+        left: 0;
+        padding: 10px;
+    }
+    .header h2 {
+        display: none;
+    }
+    .header .notif {
+        font-size: 10px;
+    }
+    .header .search-bar {
+        padding: 5px;
+        width: 200px;
+    }
+    .header .search-bar input {
+        font-size: 0.875rem;
+    }
+    .header .user-info i {
+        font-size: 1.5rem;
+    }
+    .header .user-info span {
+        display: none;
+    }
+    .main-content {
+        margin-left: 0;
+        margin-top: 60px;
+        padding: 10px;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .sidebar a {
+        margin: 10px 0; /* Reduce margin for all links */
+    }
+    .sidebar a.active {
+        margin-top: 40px; /* Add more margin to push the first link down */
+    }
+    .bioskop {
+        max-width: 100%;
+    }
+    .layar {
+        width: 375px !important;
+    }
+}
+
+@media (max-width: 578px) {
+    .layar {
+        width: 375px !important;
+    }
+}
+

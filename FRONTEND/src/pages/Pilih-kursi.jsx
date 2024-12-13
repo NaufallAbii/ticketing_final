@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import '../styles/Pilih-Kursi.css'
 
 function PilihKursi () {
     const navigate = useNavigate()

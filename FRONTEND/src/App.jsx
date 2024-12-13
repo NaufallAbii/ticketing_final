@@ -7,6 +7,7 @@ import Detailfilm from './pages/detail-film'
 import PilihBioskop from './pages/pilih-bioskop'
 import PilihKursi from './pages/Pilih-kursi'
 import Pembayaran from './pages/Pembayaran'
+import Login from './pages/login'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import { NavigationProvider } from './contexts/NavigationContext'
 
@@ -24,6 +25,7 @@ function App() {
             <Route path='/pilih-bioskop' element={<PilihBioskop/>} />
             <Route path='/pilih-kursi' element={<PilihKursi/>} />
             <Route path='/Pembayaran' element={<Pembayaran/>} />
+            <Route path='/login' element={<Login/>} />
           </Routes>
         </BrowserRouter>
       </NavigationProvider>
