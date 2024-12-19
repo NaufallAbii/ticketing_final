@@ -1,6 +1,9 @@
 {
 	"dependencies": {
+<<<<<<< HEAD
 		"bcryptjs": "^2.4.3",
+=======
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
 		"react-shadow": "^20.5.0"
 	}
 }

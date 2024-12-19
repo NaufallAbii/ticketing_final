@@ -104,7 +104,11 @@ body {
     margin: 20px 0;
 }
 .main-content .tabs button {
+<<<<<<< HEAD
     background-color: #2c2c2c !important;
+=======
+    background-color: #d43b3b;
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -112,8 +116,12 @@ body {
     margin-right: 10px;
 }
 .main-content .tabs button.active {
+<<<<<<< HEAD
 
     background-color: #d43b3b !important;
+=======
+    background-color: #2c2c2c;
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
 }
 .main-content .movie-list .movie {
     text-align: center;
@@ -126,11 +134,14 @@ body {
 }
 .main-content .movie-list .movie p {
     padding-top: 10px;
+<<<<<<< HEAD
     
 }
 .main-content .movie-list .movie a {
     text-decoration: none;
     color: inherit;
+=======
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
 }
 .hamburger-menu {
     display: none;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useBooking } from '../contexts/BookingContext';
@@ -27,12 +28,22 @@ function Pembayaran () {
 
 
 
+=======
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+import '../styles/pembayaran.css'
+
+function Pembayaran () {
+    const navigate = useNavigate()
+    
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
         const goToProfile = () => {
             navigate('/profile', {
             state: { from: '/pembayaran'}
             })
         }
 
+<<<<<<< HEAD
     
        // Handle input changes
        const handleCardChange = (e) => {
@@ -88,6 +99,15 @@ function Pembayaran () {
   };
 
         
+=======
+    const [walletChosen, ChoseWallet] = useState("")
+    
+    const handleSetWallet = (wallet) => {
+        ChoseWallet(wallet);
+        console.log(`E-Wallet yang dipilih: ${wallet}`);
+    };
+    console.log("E-Wallet Terpilih:", walletChosen);
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
 
     // State untuk mengontrol sidebar
             const [isSidebarActive, setIsSidebarActive] = useState(false);
@@ -185,6 +205,7 @@ function Pembayaran () {
         <div className>
           <ul className="nav nav-tabs justify-content-center" id="myTab" role="tablist">
             <li className="nav-item" role="presentation">
+<<<<<<< HEAD
               <button className={`nav-link pembayaran ${activeTab === 'CreditCard' ? 'active' : ''}`}
             onClick={() => setActiveTab('CreditCard')} id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true" 
               >Kartu Kredit</button>
@@ -196,10 +217,20 @@ function Pembayaran () {
             <li className="nav-item" role="presentation">
               <button className={`nav-link pembayaran ${activeTab === 'Bank' ? 'active' : ''}`}
             onClick={() => setActiveTab('Bank')}id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Bank</button>
+=======
+              <button className="nav-link pembayaran active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Kartu Kredit</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link pembayaran" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">E-Wallet</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link pembayaran" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Bank</button>
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
             </li>
           </ul>
           <div className="tab-content" id="myTabContent">
             <div className="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabIndex={0}>
+<<<<<<< HEAD
               <div className="container-sm mt-4 border border-secondary p-4">
                 <div className='heading text-center'>
                   <h2>Informasi Kartu Kredit</h2>
@@ -237,11 +268,62 @@ function Pembayaran () {
           </div>
         </div>
       )}
+=======
+              <div className="container-sm mt-4 border border-secondary">
+                <form className="row g-3 p-3">
+                  <label className="form-label">Cardholder Name</label>
+                  <div className="col-md-6">
+                    <input type="text" className="form-control" id="inputFName" placeholder="First Name" />
+                  </div>
+                  <div className="col-md-6">
+                    <input type="text" className="form-control" id="inputLName" placeholder="Last Name" />
+                  </div>
+                  <div className="col-md-10">
+                    <label htmlFor="inputNumber" className="form-label">Card Number</label>
+                    <input type="text" className="form-control" id="inputNumber" />
+                  </div>
+                  <div className="col-md-2">
+                    <label htmlFor="inputCVV" className="form-label">CVV</label>
+                    <input type="text" className="form-control" />
+                  </div>
+                  <div className="col-md-6">
+                    <label htmlFor="inputIssue" className="form-label">Issue Date</label>
+                    <input type="month" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+                  </div>
+                  <div className="col-md-6">
+                    <label htmlFor="inputExpiry" className="form-label">Expiry Date</label>
+                    <input type="month" className="form-control" />
+                  </div>
+                  <div className="col-md-12">
+                    <label htmlFor="inputAddress" className="form-label">Billing Address</label>
+                    <input type="text" className="form-control" />
+                  </div>
+                  <div className="col-md-6">
+                    <label htmlFor="inputCity" className="form-label">City</label>
+                    <input type="text" className="form-control" id="inputCity" />
+                  </div>
+                  <div className="col-md-4">
+                    <label htmlFor="inputProvince" className="form-label">Province</label>
+                    <select id="inputProvince" className="form-select">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div className="col-md-2">
+                    <label htmlFor="inputZip" className="form-label">Zip</label>
+                    <input type="text" className="form-control" id="inputZip" />
+                  </div>
+                  <div className="col-12">
+                    <button type="submit" className="btn btn-outline-danger">Konfirmasi</button>
+                  </div>
+                </form>
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
               </div>
             </div>
             <div className="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabIndex={0}>
               <div className="container-sm d-flex flex-column border border-secondary justify-content-evenly mt-4 p-4">
                 <div className="heading text-center">
+<<<<<<< HEAD
                   <h2>Pilihan E-Wallet Yang Tersedia</h2>
                 </div>
                 {activeTab === 'EWallet' && (
@@ -257,10 +339,34 @@ function Pembayaran () {
           ))}
         </div>
       )}
+=======
+                  <h1>Pilihan E-Wallet Yang Tersedia</h1>
+                </div>
+                <div className="wallet d-flex flex-row justify-content-center">
+                  <div className="m-2">
+                    <button className="btn btn-primary p-3 mt-3" onClick={() => handleSetWallet("Dana")}>Dana</button>
+                  </div>
+                  <div className="m-2">
+                    <button className="btn btn-success p-3 mt-3" onClick={() => handleSetWallet("Gopay")}>Gopay</button>
+                  </div>
+                  <div className="m-2">
+                    <button className="btn btn-danger p-3 mt-3" onClick={() => handleSetWallet("LinkAja")}>LinkAja</button>
+                  </div>
+                </div>
+                <div className="d-flex border border-secondary p-4 m-5">
+                  <h1 className="total me-auto p-2">
+                    E-Wallet yang dipilih : <span>{walletChosen}</span>
+                  </h1>
+                  <div className="submit-btn">
+                    <button className="btn btn-outline-danger p-3">Konfirmasi</button>
+                  </div>
+                </div>
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
               </div>
             </div>
             <div className="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabIndex={0}>
               <div className="container-sm d-flex flex-column border border-secondary justify-content-center mt-4 p-4">
+<<<<<<< HEAD
               <div className='heading text-center'>
                   <h2>Pilihan Bank</h2>
                 </div>
@@ -314,6 +420,31 @@ function Pembayaran () {
   </div>
 )}
 
+=======
+                <form>
+                  <div className="d-flex border border-secondary p-4 m-5">
+                    <h3 className="col-md-6">
+                      Pilihan Bank Yang Tersedia : <span id="wallet" />
+                    </h3>
+                    <div className="col-md-6">
+                      <select id="inputBank" className="form-select">
+                        <option selected>Bank BRI</option>
+                        <option>Bank BNI</option>
+                        <option>Bank Mandiri</option>
+                        <option>Bank Jago</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="submit d-flex justify-content-center">
+                    <button className="btn btn-outline-danger p-2" type="submit">
+                      Konfirmasi
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
         </div>
       </div>
     </div>

@@ -2,15 +2,30 @@
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
+<<<<<<< HEAD
 
 .login-container{
     
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #c9d6ff;
+    background-image: url('/images/rm222-mind-22.jpg');
+    background-size: cover;
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
 }
+<<<<<<< HEAD
 .galaxy {
     background-image: url('/images/rm222-mind-22.jpg');
     background-size: cover;
@@ -21,6 +36,8 @@
 .paddington {
     padding-top: 200px;
 }
+=======
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
 
 .container{
     background-color: #fff;

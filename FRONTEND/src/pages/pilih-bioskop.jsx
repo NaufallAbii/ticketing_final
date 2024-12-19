@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+<<<<<<< HEAD
 import { useBooking } from '../contexts/BookingContext';
+=======
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
 import '../styles/Pilih-Bioskop.css';
 
 function PilihBioskop() {
   const navigate = useNavigate()
+<<<<<<< HEAD
   const { updateTheater, updateSchedule } = useBooking(); // Access context functions
   const [selectedDate, setSelectedDate] = useState('10 Oktober');
   const [selectedTheater, setSelectedTheater] = useState(null);
   const [selectedSchedule, setSelectedSchedule] = useState(null);
+=======
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
 
   const goToProfile = () => {
     navigate('/profile', {
@@ -16,6 +22,11 @@ function PilihBioskop() {
     })
   }
 
+<<<<<<< HEAD
+=======
+  const [ticketPrice, setTicketPrice] = useState(0);
+  const [selectedDate, setSelectedDate] = useState('10 Oktober');
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
 
   // Data mock untuk setiap tanggal
   const theatreData = {
@@ -33,6 +44,7 @@ function PilihBioskop() {
     ],
   };
 
+<<<<<<< HEAD
   const handleTheaterClick = (theater) => {
     setSelectedTheater(theater);
     updateTheater(theater); // Update theater in context
@@ -52,6 +64,13 @@ function PilihBioskop() {
   };
 
 
+=======
+  const handleSetPrice = (price) => {
+    setTicketPrice(price);
+    console.log(`Price set to: IDR ${price}`);
+  };
+
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
   // State untuk mengontrol sidebar
         const [isSidebarActive, setIsSidebarActive] = useState(false);
       
@@ -170,11 +189,19 @@ function PilihBioskop() {
 
         {/* Tanggal Tab */}
         <nav>
+<<<<<<< HEAD
           <div className="nav nav-tabs justify-content-center">
             {Object.keys(theatreData).map((date) => (
               <button
                 key={date}
                 className={`nav-link ${selectedDate === date ? 'active' : ''}`}
+=======
+          <div className="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            {Object.keys(theatreData).map((date) => (
+              <button
+                key={date}
+                className={`nav-link nav-color ${selectedDate === date ? 'active' : ''}`}
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
                 onClick={() => setSelectedDate(date)}
               >
                 {date}
@@ -191,28 +218,40 @@ function PilihBioskop() {
               <div className="time d-flex justify-content-center">
                 <button
                   className="btn btn-jam m-2"
+<<<<<<< HEAD
                   onClick={() => {
                     handleTheaterClick(theatre.name);
                     handleScheduleClick('Jam 1');
                   }}
+=======
+                  onClick={() => handleSetPrice(50000)}
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
                 >
                   Jam 1
                 </button>
                 <button
                   className="btn btn-jam m-2"
+<<<<<<< HEAD
                   onClick={() => {
                     handleTheaterClick(theatre.name);
                     handleScheduleClick('Jam 2');
                   }}
+=======
+                  onClick={() => handleSetPrice(70000)}
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
                 >
                   Jam 2
                 </button>
                 <button
                   className="btn btn-jam m-2"
+<<<<<<< HEAD
                   onClick={() => {
                     handleTheaterClick(theatre.name);
                     handleScheduleClick('Jam 3');
                   }}
+=======
+                  onClick={() => handleSetPrice(90000)}
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
                 >
                   Jam 3
                 </button>
@@ -224,6 +263,7 @@ function PilihBioskop() {
         {/* Total Harga */}
         <div className="confirm d-flex">
           <h1 className="total me-auto p-2">
+<<<<<<< HEAD
             Selected: {selectedTheater || 'None'} - {selectedSchedule || 'None'}
           </h1>
           <button className="btn btn-outline-danger p-3" onClick={handleConfirm}>
@@ -231,6 +271,18 @@ function PilihBioskop() {
           </button>
         </div>
 
+=======
+            Total Harga : IDR <span>{ticketPrice}</span>
+          </h1>
+          <div className="submit-btn">
+            <button className="btn btn-outline-danger p-3">
+              <a href="/pilih-kursi" className="text-decoration-none text-reset">
+                Konfirmasi
+              </a>
+            </button>
+          </div>
+        </div>
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
       </div>
     </div>
     </div>

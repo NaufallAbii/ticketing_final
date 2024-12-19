@@ -160,6 +160,7 @@ body {
 
 .rating {
     display: flex;
+<<<<<<< HEAD
     align-items: center; /* Vertikal sejajar */
     gap: 25px !important;
 }
@@ -183,6 +184,10 @@ body {
     
 }
   
+=======
+    font-size: 16px;
+}
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
 
 .additional-info {
     display: flex;
@@ -198,6 +203,12 @@ body {
 .casting {
     width: 95%;
 }
+<<<<<<< HEAD
+=======
+.profile-cast {
+
+}
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
 .profile-cast .cast {
     max-width: 100%;
     height: auto;
@@ -226,6 +237,7 @@ body {
     height: 90%;
     object-fit: cover;
 }
+<<<<<<< HEAD
 .more-movies .movies p {
     padding-top: 10px;
 }
@@ -234,6 +246,9 @@ body {
     color: inherit;
    
 }
+=======
+
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
 
 
 .hamburger-menu {
@@ -344,9 +359,12 @@ body {
     .film-title{
         font-size: 18px;
     }
+<<<<<<< HEAD
     .rating span {
         font-size: 15px;
     }
+=======
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
     .container-cast-movie {
         width: 93%;
     }

@@ -93,7 +93,11 @@ function Trending() {
             <div className="keterangan ms-3">
               <h3>Minion</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus hic similique vel eveniet saepe natus blanditiis illum fuga excepturi.</p>
+<<<<<<< HEAD
               <div className="rating-film d-flex">
+=======
+              <div className="rating d-flex">
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
                 <span>5</span>
                 <div className="star px-3 text-warning">
                   <span><i className="fas fa-solid fa-star" /></span>
@@ -112,7 +116,11 @@ function Trending() {
             <div className="keterangan ms-3">
               <h3>Minion</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus hic similique vel eveniet saepe natus blanditiis illum fuga excepturi.</p>
+<<<<<<< HEAD
               <div className="rating-film d-flex">
+=======
+              <div className="rating d-flex">
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
                 <span>5</span>
                 <div className="star px-3 text-warning">
                   <span><i className="fas fa-solid fa-star" /></span>
@@ -131,7 +139,11 @@ function Trending() {
             <div className="keterangan ms-3">
               <h3>Minion</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus hic similique vel eveniet saepe natus blanditiis illum fuga excepturi.</p>
+<<<<<<< HEAD
               <div className="rating-film d-flex">
+=======
+              <div className="rating d-flex">
+>>>>>>> 62a42647232249849df32daa590cc2148c4c324f
                 <span>5</span>
                 <div className="star px-3 text-warning">
                   <span><i className="fas fa-solid fa-star" /></span>
